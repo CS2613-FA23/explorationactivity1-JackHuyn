@@ -16,18 +16,23 @@
 I select the pandas package in python to be my topic research for the first exporation activities
 
 1.  What is the package/library?
+
         What purpose does it serve?
+
             The pandas library in python is used for analyzing, cleaning, exploring and manipulating data. So it mainly working with data sets. This library will be helpful for student that chosing Data Science as their major.
 
 2.  How do you use it?
+
         You can just simply import the pandas from the library after install it.
 
     To install it?
+
         If you are using Visual Studio Code, open your terminal then simply type in "pip install pandas" . This will install every package you need to use pandas in python
 
         If you are using Mac, you have to ensure that you have python3 and pip3 up to date. You can check that by using:
         > python3 --version
         > pip3 --version
+
         If you want to make sure that your pip3 version run perfectlym you can update it by:
         > pip3 install --upgrade pip
     
@@ -36,11 +41,17 @@ I select the pandas package in python to be my topic research for the first expo
     Some basic function to use when using pandas
 
 3.  What are the functionalities of the package?/library?
+
 4.  When was it created?
+
         Pandas was created in January 11 2008
+
 5.  Why did you select this package/library?
+
         I choose pandas as my topic research because my major is Data Science, this will be my foundation for me future project as well as improve my knowledge when handling data sets problem.
+
 6.  How did learning the package/library influence your learning of the language?
+
 7.  How was your overall experiences with the package/library?
 
 ## References
