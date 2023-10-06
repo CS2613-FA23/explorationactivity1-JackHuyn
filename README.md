@@ -63,4 +63,6 @@ I select the pandas package in python to be my topic research for the first expo
 
     Pandas tutorial. (n.d.). https://www.w3schools.com/python/pandas/default.asp
 
-    
+    CORGIS Datasets Project. (n.d.). https://corgis-edu.github.io/corgis/csv/weather/
+
+    VS Code: ModuleNotFoundError: No module named “pandas.” (n.d.). Stack Overflow. https://stackoverflow.com/questions/63388135/vs-code-modulenotfounderror-no-module-named-pandas
