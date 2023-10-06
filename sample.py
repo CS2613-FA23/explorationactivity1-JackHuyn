@@ -56,7 +56,17 @@ readB =pd.read_json('someth.json')
 
 
 
+###############################################################
+# Analyzing data
 
+# use .info() to get the information about the data set
+
+
+
+
+
+
+###############################################################
 
 
 
