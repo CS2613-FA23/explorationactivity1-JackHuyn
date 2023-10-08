@@ -52,7 +52,7 @@ readA = pd.read_csv('weather.csv')
 weatherA = pd.DataFrame(readA)
    
 # Load data from JSON file
-readB =pd.read_json('someth.json')
+#readB =pd.read_json('someth.json')
 
 
 
@@ -60,18 +60,41 @@ readB =pd.read_json('someth.json')
 # Analyzing data
 
 # use .info() to get the information about the data set
+# .info will return the Dtype of value
+# as well as non-null count which you can see how many value 
+# is left blank
 
+
+
+
+
+# .head() will autotatically print first 5
+# line in the data, if you want to specific the number of row
+# use .head(n) where n is the bumber you want
+# the same go with .tail()
 
 
 
 
 
 ###############################################################
+# Manipulating data
+# remove empty cells
+# we will use dropna() function to return a new DF without empty cells
+# if you dont want to change the original data
+# use dropna(inplace = True)
+
+# to fill in the empty cell with data
+# use fillna(130, inpalce = True)
+# to specifiles column
+# ["sth"].fillna(130, inplace = True)
+
 
 
 
 
 ###############################################################
+# printing data here
 print("Printing Series")
 print(mySData)
 print(mySDataB)
