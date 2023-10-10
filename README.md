@@ -40,7 +40,70 @@ I select the pandas package in python to be my topic research for the first expo
     
     Some basic function to use when using pandas
 
+        Series()
+        
+            This function convert a array of data into a Series ( use for single data input )
+
+        Dataframe()
+
+            This function convert a array of data into a Dataframe ( use for multitple data input)
+
+        info()
+
+            Return information of data set (data type, data size, non-null value)
+
+        head()
+
+            Print first 5 data in a data frame/ series
+        tail(n)
+
+            Print last 5 data in a data frame/ series
+
+        toString()
+
+            Print everything in the data farme/ series
+
+
+    Read/Write 
+
+        read_csv
+            Load data from CSV file
+        read_JSON
+            Load data from JSON file
+        to_csv 
+            Write data to CSV file
+        to_JSON
+            Write data to JSON file
+
+    Manipulate data
+
+        dropna()
+            Return a new Data Framge that empty all rows that contain null value
+        fillna()
+            Return a new Data Framge that fill all rows that contain null value with a given value
+        
+        mean()
+            return average of a row/ column
+        median()
+            return middle value of a row/ column
+        mode()
+            return most frequenly value of a row/ column
+
+        to_datetime()
+        
+        loc[n, "sth"] replace a value at row n/ column "sth'
+
+        duplicated() 
+            return boolean value fpr each row
+        
+        drop_duplicated()
+
+
+
 3.  What are the functionalities of the package?/library?
+
+    a  To analyze the data set from JSON, csv or excel file. 
+    b  To make a graph, calculate probability, vv
 
 4.  When was it created?
 
@@ -66,3 +129,5 @@ I select the pandas package in python to be my topic research for the first expo
     CORGIS Datasets Project. (n.d.). https://corgis-edu.github.io/corgis/csv/weather/
 
     VS Code: ModuleNotFoundError: No module named “pandas.” (n.d.). Stack Overflow. https://stackoverflow.com/questions/63388135/vs-code-modulenotfounderror-no-module-named-pandas
+
+    Download free sample JSON file with multiple records. (n.d.). Hire Developers, Free Coding Resources for the Developer. https://www.appsloveworld.com/download-sample-json-file-with-multiple-records
