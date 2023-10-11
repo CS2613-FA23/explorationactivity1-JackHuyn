@@ -12,10 +12,11 @@
 
 #### What purpose does your program serve?
 
-    To analyze some simple data set from some given source
+    To analyze some simple data set from some given source that i found on the internet
+    Then using some basic function to manipulate and graph the value
 
 #### What would be some sample input/output?
-
+    ![Sample output from the code](Exploration_1.png)
 
 ## Package/ Library Overview
 #### Which package/library did you select?
@@ -90,16 +91,19 @@ I select the pandas package in python to be my topic research for the first expo
             Load data from CSV file
 
             Ex: fileA = pandas.read_csv(path/output)
+
         read_JSON
 
             Load data from JSON file
 
             Ex: fileB = pandas.read_json(path/output)
+
         to_csv 
 
             Write data to CSV file
 
             Ex : fileA = pandas.to_csv(path/output)
+
         to_json
 
             Write data to JSON file
@@ -109,14 +113,17 @@ I select the pandas package in python to be my topic research for the first expo
     Manipulate data
 
         dropna()
-            Return a new Data Framge that empty all rows that contain null value
+            Return a new created Data Framge that empty all rows that contain null value
+
         fillna()
-            Return a new Data Framge that fill all rows that contain null value with a given value
+            Return a new created Data Framge that fill all rows that contain null value with a given value
         
         mean()
             return average of a row/ column
+
         median()
             return middle value of a row/ column
+
         mode()
             return most frequenly value of a row/ column
 
@@ -131,7 +138,14 @@ I select the pandas package in python to be my topic research for the first expo
             remove duplicated valur for each row
 
 
+    Ploting graph
 
+        .plot(kind,x,y) where kind is the kind of plot that you want to plot (bar,hist,scatter,pie,...)
+        x = "first comlumn"
+        y = "second column"
+
+        Ex: smokeData.plot(kind="hist",x="age", y="amt_weekdays")
+        
 3.  What are the functionalities of the package?/library?
 
     a  To analyze the data set from JSON, csv or excel file. 
@@ -158,6 +172,7 @@ I select the pandas package in python to be my topic research for the first expo
     From a scale from 1-10, I'm thinking that I'm around 6-7 at the moment, i need more practice as well as some experiences to manipulate/ understand more function
 
 ## References
+
     Basic writing and formatting syntax - GitHub Docs. (n.d.). GitHub Docs. https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
     GeeksforGeeks. (2021). How to install Python Pandas on MacOS. GeeksforGeeks. https://www.geeksforgeeks.org/how-to-install-python-pandas-on-macos/

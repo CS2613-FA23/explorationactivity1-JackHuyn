@@ -62,7 +62,7 @@ print(weatherA)
 print("Example after reading from JSON file ")
 print(employData)
 print("To print the entire CSV file, add .to_string()")
-print(weatherA.to_string())
+#print(weatherA.to_string())
 
 ###############################################################
 # Analyzing data
@@ -78,7 +78,7 @@ print("Analyzing Data:")
 print("Analyzing weather data")
 print(weatherA.info())
 print("***********************************************")
-print("Analyzing eomployee data")
+print("Analyzing employee data")
 print(employData.info())
 
 
@@ -109,8 +109,6 @@ print(employData.info())
 
 
 
-
-
 print("***********************************************")
 print("Manipulating data")
 
@@ -128,16 +126,25 @@ print(newData.info())
 newDataB = smokeData.fillna(random.randint(1,100))
 print(newDataB.info())
 
+mean = weatherA["Data.Temperature.Max Temp"].mean()
+median = weatherA["Data.Wind.Speed"].median()
+mode = newData["age"].mode()
+
+print("The avg max temp is:\n")
+print(mean)
+print("The middle value for wind speed :\n")
+print(median)
+print("Most common age of smoking is: \n")
+print(mode)
+
 
 ###############################################################
 # Ploting graph
 # to be able to graph some data, we must import new library
 import matplotlib.pyplot as plot
 
-
-
-
-
-
+smokeData.plot(kind="hist",x="age", y="amt_weekdays")
+weatherA.plot(kind='scatter',x="Data.Wind.Direction", y="Data.Wind.Speed")
+plot.show()
 
 
