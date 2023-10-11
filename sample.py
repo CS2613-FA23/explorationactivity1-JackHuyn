@@ -1,4 +1,5 @@
 import pandas as pd
+import random
 
 
 # data in a array acess same as normal Ex: dataA[0] = 1
@@ -31,7 +32,15 @@ print("Testing")
 
 mySData = pd.Series(dataA)
 myDFdata = pd.DataFrame(dataB)
+
+# you can specific the index of a data set
+# the index must match the number of variable
 myDFdataB = pd.DataFrame(dataB, index = ["Rank 1","Rank 2","Rank 3","Rank 4","Rank 5"])
+
+print("Some example code: ")
+print(mySData)
+print(myDFdata)
+print(myDFdataB)
 ###############################################################
 # Load data from CSV file
 
@@ -40,18 +49,37 @@ weatherA = pd.DataFrame(readA)
    
 # Load data from JSON file
 readB =pd.read_json('EmployeeData.json')
-Emp = pd.DataFrame(readB)
+employData = pd.DataFrame(readB)
 
+# set limit to row when display
+print("To check the limit row you pc can print, print pd.option.display.max_rows ")
+print("You can change the maximum row by pd.options.display.max_rows = n")
+pd.options.display.max_rows = 5
 
+print("***********************************************")
+print("Example after reading from CSV file ")
+print(weatherA)
+print("Example after reading from JSON file ")
+print(employData)
+print("To print the entire CSV file, add .to_string()")
+print(weatherA.to_string())
 
 ###############################################################
 # Analyzing data
+
 
 # use .info() to get the information about the data set
 # .info will return the Dtype of value
 # as well as non-null count which you can see how many value 
 # is left blank
 
+print("***********************************************")
+print("Analyzing Data:")
+print("Analyzing weather data")
+print(weatherA.info())
+print("***********************************************")
+print("Analyzing eomployee data")
+print(employData.info())
 
 
 
@@ -67,33 +95,49 @@ Emp = pd.DataFrame(readB)
 
 ###############################################################
 # Manipulating data
+
 # remove empty cells
 # we will use dropna() function to return a new DF without empty cells
-# if you dont want to change the original data
-# use dropna(inplace = True)
 
 # to fill in the empty cell with data
-# use fillna(130, inpalce = True)
+# use fillna(130)
 # to specifiles column
-# ["sth"].fillna(130, inplace = True)
+# ["sth"].fillna(130)
+
+# for both fill and drop, the function will return the new data set
+# if you dont want to create the new data set, you can use (inplace = true)
 
 
 
-print("To check the limit row you pc can print, print pd.option.display.max_rows ")
-print("You can change the maximum row by pd.options.display.max_rows = n")
-pd.options.display.max_rows = 10
-###############################################################
-# printing data here
-print(mySData)
-print(myDFdata)
-print(myDFdata.loc[1])
-print(myDFdataB)
+
+
 print("***********************************************")
-print("Example after reading from CSV file ")
-print(weatherA)
-print("Example after reading from JSON file ")
-print(Emp)
-print("To print the entire CSV file, add .to_string()")
-print(weatherA.to_string())
+print("Manipulating data")
+
+readC = pd.read_csv('smoking.csv')
+smokeData = pd.DataFrame(readC)
+
+print(smokeData.info())
+
+# from the input, the amt_weekends has lots of na/null value
+# we can drop the null value by
+
+newData = smokeData.dropna()
+print(newData.info())
+
+newDataB = smokeData.fillna(random.randint(1,100))
+print(newDataB.info())
+
+
+###############################################################
+# Ploting graph
+# to be able to graph some data, we must import new library
+import matplotlib.pyplot as plot
+
+
+
+
+
+
 
 
